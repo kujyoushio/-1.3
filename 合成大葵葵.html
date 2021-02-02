@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://hosimiyasio.com/game/xigua/pc.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>合成大葵葵</title>
+<script src="./合成大葵葵_files/jquery.min.js.下载"></script>
+<script language="JavaScript" type="text/JavaScript">
+			/**
+	弹出iframe页面(iframe后面会添加灰色蒙版)
+	**/
+	function showIframe(url){
+	    $("<div id='showMobilePreview'>" +
+	            "<div class='mobile_preview_header'><i class='mobile_preview_header_icon'></i></div>" +
+	            "<div class='mobile_preview_frame'><iframe id='YuFrameMobilePreview' name='YuFrameMobilePreview' ></iframe></div>" +
+	            "<div class='mobile_preview_footer'><i class='mobile_preview_footer_icon'></i></div>" +
+	        "</div>").prependTo('body');  
+	   
+	     $("#YuFrameMobilePreview").attr("src", url);  
+	  //添加背景遮罩
+	   $("<div id='YuFrameMobilePreviewBg' style='cursor:pointer;width:100%;height:100%;background-color: Gray;display:block;z-index:9998;position:absolute;left:0px;top:0px;filter:Alpha(Opacity=30);/* IE */-moz-opacity:0.4;/* Moz + FF */opacity: 0.4; '/>").prependTo('body'); 
+
+	}
+	</script>
+<style type="text/css">
+			html,body{
+			    margin: 0px;
+			}
+			
+			#showMobilePreview {
+				z-index: 9999;
+				width: 391px;
+				height: 768px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				opacity: 1;
+				text-align: center;
+			}
+
+			.mobile_preview_header {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 40px;
+				width: 387px;
+				background: #eeeff2;
+				text-align: center;
+				line-height: 40px;
+				border-top-right-radius: 50px;
+				border-top-left-radius: 50px;
+			}
+
+			.mobile_preview_header_icon {
+				display: inline-block;
+				width: 65px;
+				height: 10px;
+				background: #c8c9cc;
+				border-radius: 9px;
+				vertical-align: middle;
+				margin-top: 18px;
+			}
+
+			.mobile_preview_frame {
+				width: 375px;
+				min-height: 294px;
+				height: 667px;
+				max-height: calc(100vh - 52px);
+				top: 40px;
+				left: 0;
+				border: 6px solid #eeeff2;
+				position: relative;
+				background-color: #fff;
+				display: block;
+			}
+
+			#YuFrameMobilePreview {
+				border: none;
+				width: 375px;
+				height: 100%;
+			}
+
+			.mobile_preview_footer {
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 52px;
+				width: 387px;
+				background: #eeeff2;
+				text-align: center;
+				line-height: 45px;
+				border-bottom-right-radius: 50px;
+				border-bottom-left-radius: 50px;
+			}
+
+			.mobile_preview_footer_icon {
+				display: inline-block;
+				width: 43px;
+				height: 43px;
+				background: #c8c9cc;
+				border-radius: 50%;
+				vertical-align: middle;
+			}
+	</style>
+</head>
+<body><div id="YuFrameMobilePreviewBg" style="cursor:pointer;width:100%;height:100%;background-color: Gray;display:block;z-index:9998;position:absolute;left:0px;top:0px;filter:Alpha(Opacity=30);/* IE */-moz-opacity:0.4;/* Moz + FF */opacity: 0.4; "></div><div id="showMobilePreview"><div class="mobile_preview_header"><i class="mobile_preview_header_icon"></i></div><div class="mobile_preview_frame"><iframe id="YuFrameMobilePreview" name="YuFrameMobilePreview" src="./合成大“汐”瓜_files/saved_resource.html"></iframe></div><div class="mobile_preview_footer"><i class="mobile_preview_footer_icon"></i></div></div>
+<script>
+//手机网站的url 只需改这一处地方即可。
+var mobileUrl = './';
+var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+var browser = navigator.userAgent.toLowerCase(); 
+var isMobile = false; 
+for (var i=0; i<mobileAgent.length; i++){
+    if (browser.indexOf(mobileAgent[i])!=-1){ 
+        isMobile = true; 
+        break;
+    }
+}
+if(isMobile){
+    //当前是手机或平板等小屏设备浏览，自动跳转到手机网站
+    location.href = mobileUrl;
+}
+showIframe('https://hosimiyasio.com/game/xigua/');
+</script>
+
+
+</body></html>
